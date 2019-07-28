@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mesl?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: xzc950129
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*/*.xml
+
+
+# mapper 下面不是xml 而是文件夹 mapper/*/*.xml  原来是mapper/*.xml  是找到mapper文件夹下面所有的xml
+#现在是找到mapper下面所有的包再找到包里面所有的xml
