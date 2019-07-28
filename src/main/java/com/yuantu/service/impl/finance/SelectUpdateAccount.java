@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class SelectUpdateAccount implements com.yuantu.service.finance.SelectUpdateAccount {
     @Autowired
     MeslAccountUpdateMapper meslAccountUpdateMapper;
+
     @Override
     public MeslAccountUpdate selectUpdateAccount() {
         MeslAccountUpdate meslAccountUpdate = meslAccountUpdateMapper.selectUpdateAccount();

@@ -22,7 +22,10 @@ public interface MeslReceiptMapper {
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     int insertSelective(MeslReceipt record);
+
     MeslReceipt selectReceiptByDate(String receiptDate);
+
     List<MeslReceipt> selectAllReceipt();
+
     double total();
 }

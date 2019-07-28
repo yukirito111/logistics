@@ -13,7 +13,7 @@ public class SelectPaymentByDateImpl implements SelectPaymentByDate {
 
     @Override
     public MeslPayment selectPaymentByDateByDate(String paymentDate, String paymentType) {
-        MeslPayment meslPayment = meslPaymentMapper.selectPaymentByDate(paymentDate,paymentType);
+        MeslPayment meslPayment = meslPaymentMapper.selectPaymentByDate(paymentDate, paymentType);
         return meslPayment;
     }
 }

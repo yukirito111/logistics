@@ -9,9 +9,10 @@ import org.springframework.stereotype.Service;
 public class UpdateStockStateImpl implements UpdateStockState {
     @Autowired
     MeslStockMapper meslStockMapper;
+
     @Override
     public String updateState(String state, String id) {
-        meslStockMapper.updateState(state,id);
+        meslStockMapper.updateState(state, id);
         return "出库成功";
     }
 }

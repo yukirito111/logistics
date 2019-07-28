@@ -86,7 +86,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.id
      *
      * @return the value of mesl_shipping.id
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public Integer getId() {
@@ -98,7 +97,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.id
      *
      * @param id the value for mesl_shipping.id
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setId(Integer id) {
@@ -110,7 +108,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.shippingorder_number
      *
      * @return the value of mesl_shipping.shippingorder_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getShippingorderNumber() {
@@ -122,7 +119,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.shippingorder_number
      *
      * @param shippingorderNumber the value for mesl_shipping.shippingorder_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setShippingorderNumber(String shippingorderNumber) {
@@ -134,7 +130,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.shipping_time
      *
      * @return the value of mesl_shipping.shipping_time
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getShippingTime() {
@@ -146,7 +141,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.shipping_time
      *
      * @param shippingTime the value for mesl_shipping.shipping_time
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setShippingTime(String shippingTime) {
@@ -158,7 +152,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.train_number
      *
      * @return the value of mesl_shipping.train_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getTrainNumber() {
@@ -170,7 +163,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.train_number
      *
      * @param trainNumber the value for mesl_shipping.train_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setTrainNumber(String trainNumber) {
@@ -182,7 +174,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.origin
      *
      * @return the value of mesl_shipping.origin
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getOrigin() {
@@ -194,7 +185,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.origin
      *
      * @param origin the value for mesl_shipping.origin
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setOrigin(String origin) {
@@ -206,7 +196,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.destination
      *
      * @return the value of mesl_shipping.destination
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getDestination() {
@@ -218,7 +207,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.destination
      *
      * @param destination the value for mesl_shipping.destination
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setDestination(String destination) {
@@ -230,7 +218,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.carriage_number
      *
      * @return the value of mesl_shipping.carriage_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getCarriageNumber() {
@@ -242,7 +229,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.carriage_number
      *
      * @param carriageNumber the value for mesl_shipping.carriage_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setCarriageNumber(String carriageNumber) {
@@ -254,7 +240,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.operator
      *
      * @return the value of mesl_shipping.operator
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getOperator() {
@@ -266,7 +251,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.operator
      *
      * @param operator the value for mesl_shipping.operator
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setOperator(String operator) {
@@ -278,7 +262,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.freight_batch_number
      *
      * @return the value of mesl_shipping.freight_batch_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getFreightBatchNumber() {
@@ -290,7 +273,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.freight_batch_number
      *
      * @param freightBatchNumber the value for mesl_shipping.freight_batch_number
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setFreightBatchNumber(String freightBatchNumber) {
@@ -302,7 +284,6 @@ public class MeslShipping {
      * This method returns the value of the database column mesl_shipping.freight
      *
      * @return the value of mesl_shipping.freight
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public String getFreight() {
@@ -314,7 +295,6 @@ public class MeslShipping {
      * This method sets the value of the database column mesl_shipping.freight
      *
      * @param freight the value for mesl_shipping.freight
-     *
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     public void setFreight(String freight) {

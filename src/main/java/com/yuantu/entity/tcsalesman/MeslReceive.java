@@ -62,7 +62,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.id
      *
      * @return the value of mesl_receive.id
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public Integer getId() {
@@ -74,7 +73,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.id
      *
      * @param id the value for mesl_receive.id
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setId(Integer id) {
@@ -86,7 +84,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.receive_number
      *
      * @return the value of mesl_receive.receive_number
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getReceiveNumber() {
@@ -98,7 +95,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.receive_number
      *
      * @param receiveNumber the value for mesl_receive.receive_number
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setReceiveNumber(String receiveNumber) {
@@ -110,7 +106,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.receive_time
      *
      * @return the value of mesl_receive.receive_time
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getReceiveTime() {
@@ -122,7 +117,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.receive_time
      *
      * @param receiveTime the value for mesl_receive.receive_time
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setReceiveTime(String receiveTime) {
@@ -134,7 +128,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.origin
      *
      * @return the value of mesl_receive.origin
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getOrigin() {
@@ -146,7 +139,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.origin
      *
      * @param origin the value for mesl_receive.origin
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setOrigin(String origin) {
@@ -158,7 +150,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.receive_place
      *
      * @return the value of mesl_receive.receive_place
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getReceivePlace() {
@@ -170,7 +161,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.receive_place
      *
      * @param receivePlace the value for mesl_receive.receive_place
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setReceivePlace(String receivePlace) {
@@ -182,7 +172,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.freight_batch_number
      *
      * @return the value of mesl_receive.freight_batch_number
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getFreightBatchNumber() {
@@ -194,7 +183,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.freight_batch_number
      *
      * @param freightBatchNumber the value for mesl_receive.freight_batch_number
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setFreightBatchNumber(String freightBatchNumber) {
@@ -206,7 +194,6 @@ public class MeslReceive {
      * This method returns the value of the database column mesl_receive.freight
      *
      * @return the value of mesl_receive.freight
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getFreight() {
@@ -218,7 +205,6 @@ public class MeslReceive {
      * This method sets the value of the database column mesl_receive.freight
      *
      * @param freight the value for mesl_receive.freight
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setFreight(String freight) {

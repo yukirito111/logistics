@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class SelectTotalPaymentMoneyImpl implements SelectTotalPaymentMoney {
     @Autowired
     MeslPaymentMapper meslPaymentMapper;
+
     @Override
     public double selectTotalPaymentMoney(String paymentType) {
         double sum = meslPaymentMapper.total(paymentType);

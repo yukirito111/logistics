@@ -15,16 +15,17 @@ import java.util.List;
 import static com.yuantu.service.util.DateUtil.conversion;
 
 @Controller
-@RequestMapping(value = "/ShowCostProfit",method = {RequestMethod.POST})
+@RequestMapping(value = "/ShowCostProfit", method = {RequestMethod.POST})
 public class ShowCostProfit {
     @Autowired
     SelectCostProfitByDate selectCostProfitByDate;
+
     @ResponseBody //根据日期查询成本收益表
     @RequestMapping(value = "/showCostProfitByDate")
-    public List<MeslCostProfit> showCostProfitByDate(@RequestParam String startDate,@RequestParam String endDate){
+    public List<MeslCostProfit> showCostProfitByDate(@RequestParam String startDate, @RequestParam String endDate) {
         Date newStartDate = conversion(startDate);
         Date newEndDate = conversion(endDate);
-        List<MeslCostProfit> list = selectCostProfitByDate.selectCostProfitByDate(newStartDate,newStartDate);
+        List<MeslCostProfit> list = selectCostProfitByDate.selectCostProfitByDate(newStartDate, newStartDate);
         return list;
     }
 }

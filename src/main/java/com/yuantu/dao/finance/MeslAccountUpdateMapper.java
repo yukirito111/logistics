@@ -3,6 +3,7 @@ package com.yuantu.dao.finance;
 import com.yuantu.entity.finance.MeslAccountUpdate;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
 @Mapper
 public interface MeslAccountUpdateMapper {
     /**
@@ -20,7 +21,10 @@ public interface MeslAccountUpdateMapper {
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     int insertSelective(MeslAccountUpdate record);
+
     void insertAccount(MeslAccountUpdate meslAccountUpdate);
+
     void updateAccount(MeslAccountUpdate meslAccountUpdate);
+
     MeslAccountUpdate selectUpdateAccount();
 }

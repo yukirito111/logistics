@@ -21,6 +21,8 @@ public interface MeslAccountMapper {
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     int insertSelective(MeslAccount record);
+
     MeslAccount selectAccount(Integer id);
+
     void insertAccount(MeslAccount meslAccount);
 }

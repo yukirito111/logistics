@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/ShowAccount",method = {RequestMethod.GET,RequestMethod.POST})
+@RequestMapping(value = "/ShowAccount", method = {RequestMethod.GET, RequestMethod.POST})
 public class ShowAccount {
     @Autowired
     SelectAccount selectAccount;
@@ -23,28 +23,32 @@ public class ShowAccount {
     InsertUpdateAccount insertUpdateAccount;
     @Autowired
     UpdateAccount updateAccount;
+
     @ResponseBody //期初建账
-    @RequestMapping(value = "/showAccount",method = {RequestMethod.POST})
-    public MeslAccount showAccount(){
+    @RequestMapping(value = "/showAccount", method = {RequestMethod.POST})
+    public MeslAccount showAccount() {
         Integer id = 11;
         insertAccount.insertAccount();
-        MeslAccount meslAccount= selectAccount.selectAccount(11);
+        MeslAccount meslAccount = selectAccount.selectAccount(11);
         return meslAccount;
     }
+
     @ResponseBody //显示修改后账户信息
-    @RequestMapping(value = "/showUpdateAccount",method = {RequestMethod.POST})
-    public MeslAccountUpdate showUpdateAccount(){
+    @RequestMapping(value = "/showUpdateAccount", method = {RequestMethod.POST})
+    public MeslAccountUpdate showUpdateAccount() {
         MeslAccountUpdate mu = selectUpdateAccount.selectUpdateAccount();
         return mu;
     }
+
     @ResponseBody //设置默认值
-    @RequestMapping(value = "/insertAccount",method = {RequestMethod.POST})
-    public void insertAccount(){
+    @RequestMapping(value = "/insertAccount", method = {RequestMethod.POST})
+    public void insertAccount() {
         insertUpdateAccount.insertupdateAccount();
     }
+
     @ResponseBody //修改账户信息
-    @RequestMapping(value = "/updateAccount",method = {RequestMethod.POST})
-    public void updateAccount(@RequestBody MeslAccountUpdate meslAccountUpdate){
+    @RequestMapping(value = "/updateAccount", method = {RequestMethod.POST})
+    public void updateAccount(@RequestBody MeslAccountUpdate meslAccountUpdate) {
         updateAccount.updateAccount(meslAccountUpdate);
     }
 }

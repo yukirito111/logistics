@@ -62,7 +62,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.id
      *
      * @return the value of mesl_payment.id
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public Integer getId() {
@@ -74,7 +73,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.id
      *
      * @param id the value for mesl_payment.id
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setId(Integer id) {
@@ -86,7 +84,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.payment_number
      *
      * @return the value of mesl_payment.payment_number
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPaymentNumber() {
@@ -98,7 +95,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.payment_number
      *
      * @param paymentNumber the value for mesl_payment.payment_number
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPaymentNumber(String paymentNumber) {
@@ -110,7 +106,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.payment_type
      *
      * @return the value of mesl_payment.payment_type
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPaymentType() {
@@ -122,7 +117,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.payment_type
      *
      * @param paymentType the value for mesl_payment.payment_type
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPaymentType(String paymentType) {
@@ -134,7 +128,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.payment_date
      *
      * @return the value of mesl_payment.payment_date
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPaymentDate() {
@@ -146,7 +139,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.payment_date
      *
      * @param paymentDate the value for mesl_payment.payment_date
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPaymentDate(String paymentDate) {
@@ -158,7 +150,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.payment_person
      *
      * @return the value of mesl_payment.payment_person
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPaymentPerson() {
@@ -170,7 +161,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.payment_person
      *
      * @param paymentPerson the value for mesl_payment.payment_person
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPaymentPerson(String paymentPerson) {
@@ -182,7 +172,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.payment_money
      *
      * @return the value of mesl_payment.payment_money
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPaymentMoney() {
@@ -194,7 +183,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.payment_money
      *
      * @param paymentMoney the value for mesl_payment.payment_money
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPaymentMoney(String paymentMoney) {
@@ -206,7 +194,6 @@ public class MeslPayment {
      * This method returns the value of the database column mesl_payment.payment_account
      *
      * @return the value of mesl_payment.payment_account
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPaymentAccount() {
@@ -218,7 +205,6 @@ public class MeslPayment {
      * This method sets the value of the database column mesl_payment.payment_account
      *
      * @param paymentAccount the value for mesl_payment.payment_account
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPaymentAccount(String paymentAccount) {

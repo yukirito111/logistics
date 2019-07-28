@@ -72,7 +72,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.id
      *
      * @return the value of mesl_into_storehouse.id
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public Integer getId() {
@@ -84,7 +83,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.id
      *
      * @param id the value for mesl_into_storehouse.id
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setId(Integer id) {
@@ -96,7 +94,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.expressorder_number
      *
      * @return the value of mesl_into_storehouse.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getExpressorderNumber() {
@@ -108,7 +105,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.expressorder_number
      *
      * @param expressorderNumber the value for mesl_into_storehouse.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setExpressorderNumber(String expressorderNumber) {
@@ -120,7 +116,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.into_storehouse_date
      *
      * @return the value of mesl_into_storehouse.into_storehouse_date
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public Date getIntoStorehouseDate() {
@@ -132,7 +127,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.into_storehouse_date
      *
      * @param intoStorehouseDate the value for mesl_into_storehouse.into_storehouse_date
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setIntoStorehouseDate(Date intoStorehouseDate) {
@@ -144,7 +138,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.destination
      *
      * @return the value of mesl_into_storehouse.destination
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getDestination() {
@@ -156,7 +149,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.destination
      *
      * @param destination the value for mesl_into_storehouse.destination
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setDestination(String destination) {
@@ -168,7 +160,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.area_code
      *
      * @return the value of mesl_into_storehouse.area_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getAreaCode() {
@@ -180,7 +171,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.area_code
      *
      * @param areaCode the value for mesl_into_storehouse.area_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setAreaCode(String areaCode) {
@@ -192,7 +182,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.row_code
      *
      * @return the value of mesl_into_storehouse.row_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getRowCode() {
@@ -204,7 +193,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.row_code
      *
      * @param rowCode the value for mesl_into_storehouse.row_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setRowCode(String rowCode) {
@@ -216,7 +204,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.shelves_code
      *
      * @return the value of mesl_into_storehouse.shelves_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getShelvesCode() {
@@ -228,7 +215,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.shelves_code
      *
      * @param shelvesCode the value for mesl_into_storehouse.shelves_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setShelvesCode(String shelvesCode) {
@@ -240,7 +226,6 @@ public class MeslIntoStorehouse {
      * This method returns the value of the database column mesl_into_storehouse.seat_code
      *
      * @return the value of mesl_into_storehouse.seat_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getSeatCode() {
@@ -252,7 +237,6 @@ public class MeslIntoStorehouse {
      * This method sets the value of the database column mesl_into_storehouse.seat_code
      *
      * @param seatCode the value for mesl_into_storehouse.seat_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setSeatCode(String seatCode) {

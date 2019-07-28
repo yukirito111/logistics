@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class SelectReceiptByDate implements com.yuantu.service.finance.SelectReceiptByDate {
     @Autowired
     MeslReceiptMapper meslReceiptMapper;
+
     @Override
     public MeslReceipt selectReceiptByDate(String receiptDate) {
         MeslReceipt meslReceipt = meslReceiptMapper.selectReceiptByDate(receiptDate);

@@ -13,19 +13,20 @@ import java.util.List;
 public class InsertStockImpl implements InsertStock {
     @Autowired
     MeslStockMapper meslStockMapper;
+
     @Override
     public String insertStock(MeslStock meslStock) {
-       List<MeslStock> list = meslStockMapper.selectStock("0");
-       String tip = "";
-       String flag = "true";
-        for (MeslStock ms:list
-             ) {
-           if ( meslStock.getExpressorderNumber().equals(ms.getExpressorderNumber())){
+        List<MeslStock> list = meslStockMapper.selectStock("0");
+        String tip = "";
+        String flag = "true";
+        for (MeslStock ms : list
+        ) {
+            if (meslStock.getExpressorderNumber().equals(ms.getExpressorderNumber())) {
                 tip = "订单已存在";
                 flag = "false";
             }
         }
-        if (flag.equals("true")){
+        if (flag.equals("true")) {
             tip = "入库成功";
             meslStockMapper.insertStock(meslStock);
         }

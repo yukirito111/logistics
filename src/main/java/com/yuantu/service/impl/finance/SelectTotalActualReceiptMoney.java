@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 public class SelectTotalActualReceiptMoney implements com.yuantu.service.finance.SelectTotalActualReceiptMoney {
     @Autowired
     MeslReceiptMapper meslReceiptMapper;
+
     @Override
     public double selectTotalActualReceiptMoney() {
         double total = meslReceiptMapper.total();

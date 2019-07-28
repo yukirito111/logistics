@@ -12,6 +12,7 @@ import java.util.List;
 public class SelectOutStorehouseImpl implements SelectOutStorehouse {
     @Autowired
     MeslOutStorehouseMapper meslOutStorehouseMapper;
+
     @Override
     public List<MeslOutStorehouse> selectOutStorehouse() {
         List<MeslOutStorehouse> list = meslOutStorehouseMapper.selectOutStorehouse();

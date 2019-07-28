@@ -12,19 +12,20 @@ import java.util.List;
 public class InsertOutStorehouseImpl implements InsertOutStorehouse {
     @Autowired
     MeslOutStorehouseMapper meslOutStorehouseMapper;
+
     @Override
     public String insertOutStorehouse(MeslOutStorehouse meslOutStorehouse) {
         String tip = "";
         String flag = "true";
-        List<MeslOutStorehouse>list = meslOutStorehouseMapper.selectOutStorehouse();
-        for (MeslOutStorehouse ms:list
-             ) {
-            if (ms.getExpressorderNumber().equals( meslOutStorehouse.getExpressorderNumber())){
+        List<MeslOutStorehouse> list = meslOutStorehouseMapper.selectOutStorehouse();
+        for (MeslOutStorehouse ms : list
+        ) {
+            if (ms.getExpressorderNumber().equals(meslOutStorehouse.getExpressorderNumber())) {
                 tip = "添加失败";
                 flag = "false";
             }
         }
-        if (flag.equals("true") ){
+        if (flag.equals("true")) {
             meslOutStorehouseMapper.insertOutStorehouse(meslOutStorehouse);
             tip = "添加成功";
         }

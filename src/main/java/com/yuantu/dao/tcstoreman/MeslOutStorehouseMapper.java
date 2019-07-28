@@ -20,6 +20,8 @@ public interface MeslOutStorehouseMapper {
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     int insertSelective(MeslOutStorehouse record);
+
     void insertOutStorehouse(MeslOutStorehouse meslOutStorehouse);
+
     List<MeslOutStorehouse> selectOutStorehouse();
 }

@@ -12,6 +12,7 @@ import java.util.List;
 public class SelectStockImpl implements SelectStock {
     @Autowired
     MeslStockMapper meslStockMapper;
+
     @Override
     public List<MeslStock> selectStock(String state) {
         List<MeslStock> list = meslStockMapper.selectStock(state);

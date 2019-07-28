@@ -134,7 +134,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.id
      *
      * @return the value of mesl_mail.id
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public Integer getId() {
@@ -146,7 +145,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.id
      *
      * @param id the value for mesl_mail.id
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setId(Integer id) {
@@ -158,7 +156,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.expressorder_number
      *
      * @return the value of mesl_mail.expressorder_number
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getExpressorderNumber() {
@@ -170,7 +167,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.expressorder_number
      *
      * @param expressorderNumber the value for mesl_mail.expressorder_number
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setExpressorderNumber(String expressorderNumber) {
@@ -182,7 +178,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.sender_name
      *
      * @return the value of mesl_mail.sender_name
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getSenderName() {
@@ -194,7 +189,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.sender_name
      *
      * @param senderName the value for mesl_mail.sender_name
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setSenderName(String senderName) {
@@ -206,7 +200,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.sender_phone
      *
      * @return the value of mesl_mail.sender_phone
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getSenderPhone() {
@@ -218,7 +211,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.sender_phone
      *
      * @param senderPhone the value for mesl_mail.sender_phone
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setSenderPhone(String senderPhone) {
@@ -230,7 +222,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.sender_address
      *
      * @return the value of mesl_mail.sender_address
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getSenderAddress() {
@@ -242,7 +233,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.sender_address
      *
      * @param senderAddress the value for mesl_mail.sender_address
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setSenderAddress(String senderAddress) {
@@ -254,7 +244,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.recipient_name
      *
      * @return the value of mesl_mail.recipient_name
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getRecipientName() {
@@ -266,7 +255,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.recipient_name
      *
      * @param recipientName the value for mesl_mail.recipient_name
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setRecipientName(String recipientName) {
@@ -278,7 +266,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.recipient_phone
      *
      * @return the value of mesl_mail.recipient_phone
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getRecipientPhone() {
@@ -290,7 +277,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.recipient_phone
      *
      * @param recipientPhone the value for mesl_mail.recipient_phone
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setRecipientPhone(String recipientPhone) {
@@ -302,7 +288,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.recipient_address
      *
      * @return the value of mesl_mail.recipient_address
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getRecipientAddress() {
@@ -314,7 +299,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.recipient_address
      *
      * @param recipientAddress the value for mesl_mail.recipient_address
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setRecipientAddress(String recipientAddress) {
@@ -326,7 +310,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.cargo_type
      *
      * @return the value of mesl_mail.cargo_type
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getCargoType() {
@@ -338,7 +321,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.cargo_type
      *
      * @param cargoType the value for mesl_mail.cargo_type
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setCargoType(String cargoType) {
@@ -350,7 +332,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.cargo_weight
      *
      * @return the value of mesl_mail.cargo_weight
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getCargoWeight() {
@@ -362,7 +343,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.cargo_weight
      *
      * @param cargoWeight the value for mesl_mail.cargo_weight
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setCargoWeight(String cargoWeight) {
@@ -374,7 +354,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.cargo_size
      *
      * @return the value of mesl_mail.cargo_size
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getCargoSize() {
@@ -386,7 +365,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.cargo_size
      *
      * @param cargoSize the value for mesl_mail.cargo_size
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setCargoSize(String cargoSize) {
@@ -398,7 +376,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.pack_type
      *
      * @return the value of mesl_mail.pack_type
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getPackType() {
@@ -410,7 +387,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.pack_type
      *
      * @param packType the value for mesl_mail.pack_type
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setPackType(String packType) {
@@ -422,7 +398,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.transport_type
      *
      * @return the value of mesl_mail.transport_type
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getTransportType() {
@@ -434,7 +409,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.transport_type
      *
      * @param transportType the value for mesl_mail.transport_type
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setTransportType(String transportType) {
@@ -446,7 +420,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.appointment_time
      *
      * @return the value of mesl_mail.appointment_time
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getAppointmentTime() {
@@ -458,7 +431,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.appointment_time
      *
      * @param appointmentTime the value for mesl_mail.appointment_time
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setAppointmentTime(String appointmentTime) {
@@ -470,7 +442,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.mail_state
      *
      * @return the value of mesl_mail.mail_state
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getMailState() {
@@ -482,7 +453,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.mail_state
      *
      * @param mailState the value for mesl_mail.mail_state
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setMailState(String mailState) {
@@ -494,7 +464,6 @@ public class MeslMail {
      * This method returns the value of the database column mesl_mail.mail_logistics
      *
      * @return the value of mesl_mail.mail_logistics
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public String getMailLogistics() {
@@ -506,7 +475,6 @@ public class MeslMail {
      * This method sets the value of the database column mesl_mail.mail_logistics
      *
      * @param mailLogistics the value for mesl_mail.mail_logistics
-     *
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     public void setMailLogistics(String mailLogistics) {

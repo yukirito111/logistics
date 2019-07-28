@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
+
 @Mapper
 public interface MeslIntoStorehouseMapper {
     /**
@@ -23,8 +24,12 @@ public interface MeslIntoStorehouseMapper {
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     int insertSelective(MeslIntoStorehouse record);
+
     void insertStore(MeslIntoStorehouse meslIntoStorehouse);
+
     List<MeslIntoStorehouse> selectStorehouse();
-    MeslIntoStorehouse selectStorehouseByDate(@Param("startDate") Date startDate,@Param("endDate") Date endDate);
+
+    MeslIntoStorehouse selectStorehouseByDate(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
+
     MeslIntoStorehouse selectStorehouseByExpressorderNumber(String expressorderNumber);
 }

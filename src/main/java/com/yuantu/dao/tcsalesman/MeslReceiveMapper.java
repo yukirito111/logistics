@@ -20,5 +20,6 @@ public interface MeslReceiveMapper {
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     int insertSelective(MeslReceive record);
-    MeslReceive insertReceive(String receiveNumber,String receiveTime,String origin,String receivePlace,String freightBatchNumber,String freight);
+
+    MeslReceive insertReceive(String receiveNumber, String receiveTime, String origin, String receivePlace, String freightBatchNumber, String freight);
 }

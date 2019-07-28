@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class UpdateStateImpl implements UpdateState {
     @Autowired
     MeslMailMapper meslMailMapper;
+
     @Override
     public void updateState(String state) {
         meslMailMapper.updateState(state);

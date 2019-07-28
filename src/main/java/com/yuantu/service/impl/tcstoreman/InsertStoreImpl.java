@@ -13,18 +13,19 @@ import java.util.List;
 public class InsertStoreImpl implements InsertStore {
     @Autowired
     MeslIntoStorehouseMapper meslIntoStorehouseMapper;
+
     @Override
     public void insertStore(MeslIntoStorehouse meslIntoStorehouse) {
         List<MeslIntoStorehouse> list = meslIntoStorehouseMapper.selectStorehouse();
         String flag = "true";
 
-        for (MeslIntoStorehouse ms:list
-             ) {
-            if (meslIntoStorehouse.getExpressorderNumber().equals(ms.getExpressorderNumber())){
+        for (MeslIntoStorehouse ms : list
+        ) {
+            if (meslIntoStorehouse.getExpressorderNumber().equals(ms.getExpressorderNumber())) {
                 flag = "false";
             }
         }
-        if (flag == "true"){
+        if (flag == "true") {
             meslIntoStorehouseMapper.insertStore(meslIntoStorehouse);
         }
 

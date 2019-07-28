@@ -1,5 +1,5 @@
 package com.yuantu.service.courier;
 
-public interface UpdateState  {
+public interface UpdateState {
     void updateState(String state);
 }

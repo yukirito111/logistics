@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class UpdateAccountImpl implements UpdateAccount {
     @Autowired
     MeslAccountUpdateMapper meslAccountUpdateMapper;
+
     @Override
     public void updateAccount(MeslAccountUpdate meslAccountUpdate) {
         meslAccountUpdateMapper.updateAccount(meslAccountUpdate);

@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class SelectMailByStateImpl implements SelectMailByState {
     @Autowired
     MeslMailMapper meslMailMapper;
+
     @Override
     public List<MeslMail> selectMailByState(String state) {
         List<MeslMail> list = meslMailMapper.selectMailByState(state);

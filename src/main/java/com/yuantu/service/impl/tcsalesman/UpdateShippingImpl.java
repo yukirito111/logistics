@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 public class UpdateShippingImpl implements com.yuantu.service.tcsalesman.UpdateShipping {
     @Autowired
     MeslShippingMapper meslShippingMapper;
+
     @Override
     public void updateShippingorderNumber(String shippingorderNumber, Integer id) {
         meslShippingMapper.updateShippingorderNumber(shippingorderNumber, id);

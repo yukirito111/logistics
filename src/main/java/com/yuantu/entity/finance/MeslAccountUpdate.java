@@ -62,7 +62,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.id
      *
      * @return the value of mesl_account_update.id
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public Integer getId() {
@@ -74,7 +73,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.id
      *
      * @param id the value for mesl_account_update.id
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setId(Integer id) {
@@ -86,7 +84,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.update_dept
      *
      * @return the value of mesl_account_update.update_dept
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public String getUpdateDept() {
@@ -98,7 +95,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.update_dept
      *
      * @param updateDept the value for mesl_account_update.update_dept
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setUpdateDept(String updateDept) {
@@ -110,7 +106,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.update_personnel
      *
      * @return the value of mesl_account_update.update_personnel
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public String getUpdatePersonnel() {
@@ -122,7 +117,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.update_personnel
      *
      * @param updatePersonnel the value for mesl_account_update.update_personnel
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setUpdatePersonnel(String updatePersonnel) {
@@ -134,7 +128,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.update_trucks
      *
      * @return the value of mesl_account_update.update_trucks
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public String getUpdateTrucks() {
@@ -146,7 +139,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.update_trucks
      *
      * @param updateTrucks the value for mesl_account_update.update_trucks
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setUpdateTrucks(String updateTrucks) {
@@ -158,7 +150,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.update_stock
      *
      * @return the value of mesl_account_update.update_stock
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public String getUpdateStock() {
@@ -170,7 +161,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.update_stock
      *
      * @param updateStock the value for mesl_account_update.update_stock
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setUpdateStock(String updateStock) {
@@ -182,7 +172,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.update_account_name
      *
      * @return the value of mesl_account_update.update_account_name
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public String getUpdateAccountName() {
@@ -194,7 +183,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.update_account_name
      *
      * @param updateAccountName the value for mesl_account_update.update_account_name
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setUpdateAccountName(String updateAccountName) {
@@ -206,7 +194,6 @@ public class MeslAccountUpdate {
      * This method returns the value of the database column mesl_account_update.update_account_money
      *
      * @return the value of mesl_account_update.update_account_money
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public String getUpdateAccountMoney() {
@@ -218,7 +205,6 @@ public class MeslAccountUpdate {
      * This method sets the value of the database column mesl_account_update.update_account_money
      *
      * @param updateAccountMoney the value for mesl_account_update.update_account_money
-     *
      * @mbggenerated Wed Jul 10 15:02:32 CST 2019
      */
     public void setUpdateAccountMoney(String updateAccountMoney) {

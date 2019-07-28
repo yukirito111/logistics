@@ -11,9 +11,10 @@ import java.util.List;
 public class SelectPaymentByNumber implements com.yuantu.service.finance.SelectPaymentByNumber {
     @Autowired
     MeslPaymentMapper meslPaymentMapper;
+
     @Override
     public MeslPayment selectPaymentByNumber(String number) {
-        MeslPayment meslPayment =  meslPaymentMapper.selectPaymentByNumber(number);
+        MeslPayment meslPayment = meslPaymentMapper.selectPaymentByNumber(number);
         return meslPayment;
     }
 }

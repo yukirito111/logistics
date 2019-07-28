@@ -1,4 +1,5 @@
 package com.yuantu.service.util;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -6,23 +7,25 @@ import java.util.UUID;
 
 /**
  * 生成uuid编号
- * @author 吴建凯
  *
+ * @author 吴建凯
  * @date 2018年11月14日
  */
 public class UUIDCode {
 
-    public static String createID(){
+    public static String createID() {
         UUID uuid = UUID.randomUUID();
-        String id=uuid.toString();
+        String id = uuid.toString();
         return id.replace("-", "");
     }
+
     /**
      * coolfors增加生成integer的ID的方法
+     *
      * @return
      */
 
-    public static String create(){
+    public static String create() {
         SimpleDateFormat simpleDateFormat;
 
         simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmm");

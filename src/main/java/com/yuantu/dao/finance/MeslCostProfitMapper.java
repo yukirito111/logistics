@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
+
 @Mapper
 public interface MeslCostProfitMapper {
     /**
@@ -23,6 +24,8 @@ public interface MeslCostProfitMapper {
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     int insertSelective(MeslCostProfit record);
+
     List<MeslCostProfit> selectCostProfitByDate(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
-    List<MeslCostProfit> selectCostProfitByNumber(@Param("deptNumber") String deptNumber,@Param("startDate") Date startDate, @Param("endDate") Date endDate);
+
+    List<MeslCostProfit> selectCostProfitByNumber(@Param("deptNumber") String deptNumber, @Param("startDate") Date startDate, @Param("endDate") Date endDate);
 }

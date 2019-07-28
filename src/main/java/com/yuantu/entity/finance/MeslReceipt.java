@@ -70,7 +70,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.id
      *
      * @return the value of mesl_receipt.id
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getId() {
@@ -82,7 +81,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.id
      *
      * @param id the value for mesl_receipt.id
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setId(String id) {
@@ -94,7 +92,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.receiptorder_number
      *
      * @return the value of mesl_receipt.receiptorder_number
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getReceiptorderNumber() {
@@ -106,7 +103,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.receiptorder_number
      *
      * @param receiptorderNumber the value for mesl_receipt.receiptorder_number
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setReceiptorderNumber(String receiptorderNumber) {
@@ -118,7 +114,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.expressorder_number
      *
      * @return the value of mesl_receipt.expressorder_number
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getExpressorderNumber() {
@@ -130,7 +125,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.expressorder_number
      *
      * @param expressorderNumber the value for mesl_receipt.expressorder_number
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setExpressorderNumber(String expressorderNumber) {
@@ -142,7 +136,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.receipt_time
      *
      * @return the value of mesl_receipt.receipt_time
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getReceiptTime() {
@@ -154,7 +147,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.receipt_time
      *
      * @param receiptTime the value for mesl_receipt.receipt_time
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setReceiptTime(String receiptTime) {
@@ -166,7 +158,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.staff_number
      *
      * @return the value of mesl_receipt.staff_number
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getStaffNumber() {
@@ -178,7 +169,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.staff_number
      *
      * @param staffNumber the value for mesl_receipt.staff_number
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setStaffNumber(String staffNumber) {
@@ -190,7 +180,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.postage
      *
      * @return the value of mesl_receipt.postage
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getPostage() {
@@ -202,7 +191,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.postage
      *
      * @param postage the value for mesl_receipt.postage
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setPostage(String postage) {
@@ -214,7 +202,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.packaging_expense
      *
      * @return the value of mesl_receipt.packaging_expense
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getPackagingExpense() {
@@ -226,7 +213,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.packaging_expense
      *
      * @param packagingExpense the value for mesl_receipt.packaging_expense
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setPackagingExpense(String packagingExpense) {
@@ -238,7 +224,6 @@ public class MeslReceipt {
      * This method returns the value of the database column mesl_receipt.actual_receipt_money
      *
      * @return the value of mesl_receipt.actual_receipt_money
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public String getActualReceiptMoney() {
@@ -250,7 +235,6 @@ public class MeslReceipt {
      * This method sets the value of the database column mesl_receipt.actual_receipt_money
      *
      * @param actualReceiptMoney the value for mesl_receipt.actual_receipt_money
-     *
      * @mbggenerated Wed Jul 10 16:15:15 CST 2019
      */
     public void setActualReceiptMoney(String actualReceiptMoney) {

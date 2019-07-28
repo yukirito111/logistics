@@ -54,7 +54,6 @@ public class MeslOutStorehouse {
      * This method returns the value of the database column mesl_out_storehouse.id
      *
      * @return the value of mesl_out_storehouse.id
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public Integer getId() {
@@ -66,7 +65,6 @@ public class MeslOutStorehouse {
      * This method sets the value of the database column mesl_out_storehouse.id
      *
      * @param id the value for mesl_out_storehouse.id
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setId(Integer id) {
@@ -78,7 +76,6 @@ public class MeslOutStorehouse {
      * This method returns the value of the database column mesl_out_storehouse.expressorder_number
      *
      * @return the value of mesl_out_storehouse.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getExpressorderNumber() {
@@ -90,7 +87,6 @@ public class MeslOutStorehouse {
      * This method sets the value of the database column mesl_out_storehouse.expressorder_number
      *
      * @param expressorderNumber the value for mesl_out_storehouse.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setExpressorderNumber(String expressorderNumber) {
@@ -102,7 +98,6 @@ public class MeslOutStorehouse {
      * This method returns the value of the database column mesl_out_storehouse.out_storehouse_date
      *
      * @return the value of mesl_out_storehouse.out_storehouse_date
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getOutStorehouseDate() {
@@ -114,7 +109,6 @@ public class MeslOutStorehouse {
      * This method sets the value of the database column mesl_out_storehouse.out_storehouse_date
      *
      * @param outStorehouseDate the value for mesl_out_storehouse.out_storehouse_date
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setOutStorehouseDate(String outStorehouseDate) {
@@ -126,7 +120,6 @@ public class MeslOutStorehouse {
      * This method returns the value of the database column mesl_out_storehouse.destination
      *
      * @return the value of mesl_out_storehouse.destination
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getDestination() {
@@ -138,7 +131,6 @@ public class MeslOutStorehouse {
      * This method sets the value of the database column mesl_out_storehouse.destination
      *
      * @param destination the value for mesl_out_storehouse.destination
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setDestination(String destination) {
@@ -150,7 +142,6 @@ public class MeslOutStorehouse {
      * This method returns the value of the database column mesl_out_storehouse.shipment_method
      *
      * @return the value of mesl_out_storehouse.shipment_method
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getShipmentMethod() {
@@ -162,7 +153,6 @@ public class MeslOutStorehouse {
      * This method sets the value of the database column mesl_out_storehouse.shipment_method
      *
      * @param shipmentMethod the value for mesl_out_storehouse.shipment_method
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setShipmentMethod(String shipmentMethod) {
@@ -174,7 +164,6 @@ public class MeslOutStorehouse {
      * This method returns the value of the database column mesl_out_storehouse.receive_number
      *
      * @return the value of mesl_out_storehouse.receive_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getReceiveNumber() {
@@ -186,7 +175,6 @@ public class MeslOutStorehouse {
      * This method sets the value of the database column mesl_out_storehouse.receive_number
      *
      * @param receiveNumber the value for mesl_out_storehouse.receive_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setReceiveNumber(String receiveNumber) {

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class InsertAccountImpl implements InsertAccount {
     @Autowired
     MeslAccountMapper meslAccountMapper;
+
     @Override
     public void insertAccount() {
         MeslAccount meslAccount = new MeslAccount();

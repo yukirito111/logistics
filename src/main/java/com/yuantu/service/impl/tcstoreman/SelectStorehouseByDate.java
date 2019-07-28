@@ -11,9 +11,10 @@ import java.util.Date;
 public class SelectStorehouseByDate implements com.yuantu.service.tcstoreman.SelectStorehouseByDate {
     @Autowired
     MeslIntoStorehouseMapper meslIntoStorehouseMapper;
+
     @Override
-    public MeslIntoStorehouse selectStorehouseByDate(Date startDate,Date endDate) {
-        MeslIntoStorehouse meslIntoStorehouse = meslIntoStorehouseMapper.selectStorehouseByDate(startDate,endDate);
+    public MeslIntoStorehouse selectStorehouseByDate(Date startDate, Date endDate) {
+        MeslIntoStorehouse meslIntoStorehouse = meslIntoStorehouseMapper.selectStorehouseByDate(startDate, endDate);
         return meslIntoStorehouse;
     }
 }

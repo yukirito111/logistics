@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class SelectCountImpl implements SelectCount {
     @Autowired
     MeslStockMapper meslStockMapper;
+
     @Override
     public long selectCount(String state) {
         long count = meslStockMapper.selectCount(state);

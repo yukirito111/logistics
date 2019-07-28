@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class InsertShippingImpl implements InsertShipping {
     @Autowired
     MeslShippingMapper meslShippingMapper;
+
     @Override
     public MeslShipping insertShipping(MeslShipping meslShipping) {
         MeslShipping ms = meslShippingMapper.insertShipping(meslShipping);

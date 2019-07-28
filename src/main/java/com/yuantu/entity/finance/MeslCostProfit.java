@@ -56,7 +56,6 @@ public class MeslCostProfit {
      * This method returns the value of the database column mesl_cost_profit.id
      *
      * @return the value of mesl_cost_profit.id
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public Integer getId() {
@@ -68,7 +67,6 @@ public class MeslCostProfit {
      * This method sets the value of the database column mesl_cost_profit.id
      *
      * @param id the value for mesl_cost_profit.id
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public void setId(Integer id) {
@@ -80,7 +78,6 @@ public class MeslCostProfit {
      * This method returns the value of the database column mesl_cost_profit.cost_profit__date
      *
      * @return the value of mesl_cost_profit.cost_profit__date
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public Date getCostProfitDate() {
@@ -92,7 +89,6 @@ public class MeslCostProfit {
      * This method sets the value of the database column mesl_cost_profit.cost_profit__date
      *
      * @param costProfitDate the value for mesl_cost_profit.cost_profit__date
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public void setCostProfitDate(Date costProfitDate) {
@@ -104,7 +100,6 @@ public class MeslCostProfit {
      * This method returns the value of the database column mesl_cost_profit.dept_number
      *
      * @return the value of mesl_cost_profit.dept_number
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public String getDeptNumber() {
@@ -116,7 +111,6 @@ public class MeslCostProfit {
      * This method sets the value of the database column mesl_cost_profit.dept_number
      *
      * @param deptNumber the value for mesl_cost_profit.dept_number
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public void setDeptNumber(String deptNumber) {
@@ -128,7 +122,6 @@ public class MeslCostProfit {
      * This method returns the value of the database column mesl_cost_profit.total_expend
      *
      * @return the value of mesl_cost_profit.total_expend
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public String getTotalExpend() {
@@ -140,7 +133,6 @@ public class MeslCostProfit {
      * This method sets the value of the database column mesl_cost_profit.total_expend
      *
      * @param totalExpend the value for mesl_cost_profit.total_expend
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public void setTotalExpend(String totalExpend) {
@@ -152,7 +144,6 @@ public class MeslCostProfit {
      * This method returns the value of the database column mesl_cost_profit.total_income
      *
      * @return the value of mesl_cost_profit.total_income
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public String getTotalIncome() {
@@ -164,7 +155,6 @@ public class MeslCostProfit {
      * This method sets the value of the database column mesl_cost_profit.total_income
      *
      * @param totalIncome the value for mesl_cost_profit.total_income
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public void setTotalIncome(String totalIncome) {
@@ -176,7 +166,6 @@ public class MeslCostProfit {
      * This method returns the value of the database column mesl_cost_profit.total_profit
      *
      * @return the value of mesl_cost_profit.total_profit
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public String getTotalProfit() {
@@ -188,7 +177,6 @@ public class MeslCostProfit {
      * This method sets the value of the database column mesl_cost_profit.total_profit
      *
      * @param totalProfit the value for mesl_cost_profit.total_profit
-     *
      * @mbggenerated Fri Jun 28 16:00:13 CST 2019
      */
     public void setTotalProfit(String totalProfit) {

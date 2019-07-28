@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
-public class SelectPaymentByPaymentByTypeImpl implements SelectPaymentByPaymentType{
+public class SelectPaymentByPaymentByTypeImpl implements SelectPaymentByPaymentType {
     @Autowired
     MeslPaymentMapper meslPaymentMapper;
+
     @Override
     public List<MeslPayment> selectPaymentByPaymentType(String paymentType) {
         List<MeslPayment> list = meslPaymentMapper.selectPaymentByPaymentType(paymentType);

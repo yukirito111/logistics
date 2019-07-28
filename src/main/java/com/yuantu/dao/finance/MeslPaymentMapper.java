@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+
 @Mapper
 public interface MeslPaymentMapper {
     /**
@@ -22,8 +23,12 @@ public interface MeslPaymentMapper {
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     int insertSelective(MeslPayment record);
+
     List<MeslPayment> selectPaymentByPaymentType(String paymentType);
-    MeslPayment selectPaymentByDate(@Param("paymentDate") String paymentDate,@Param("paymentType") String paymentType);
+
+    MeslPayment selectPaymentByDate(@Param("paymentDate") String paymentDate, @Param("paymentType") String paymentType);
+
     MeslPayment selectPaymentByNumber(String number);
+
     double total(String paymentType);
 }

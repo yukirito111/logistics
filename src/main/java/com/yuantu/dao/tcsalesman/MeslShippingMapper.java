@@ -22,13 +22,22 @@ public interface MeslShippingMapper {
      * @mbggenerated Tue Jul 16 13:45:48 CST 2019
      */
     int insertSelective(MeslShipping record);
+
     MeslShipping insertShipping(MeslShipping meslShipping);
-    void updateShippingorderNumber(String shippingorderNumber,Integer id);
-    void updateShippingTime(String shippingTime,Integer id);
-    void updateTrainNumber(String trainNumber,Integer id);
-    void updateOrigin(String origin,Integer id);
-    void updateDestination(String destination,Integer id);
-    void updateCarriageNumber(String carriageNumber,Integer id);
-    void updateOperator(String operator,Integer id);
+
+    void updateShippingorderNumber(String shippingorderNumber, Integer id);
+
+    void updateShippingTime(String shippingTime, Integer id);
+
+    void updateTrainNumber(String trainNumber, Integer id);
+
+    void updateOrigin(String origin, Integer id);
+
+    void updateDestination(String destination, Integer id);
+
+    void updateCarriageNumber(String carriageNumber, Integer id);
+
+    void updateOperator(String operator, Integer id);
+
     List<MeslShipping> selectShipping();
 }

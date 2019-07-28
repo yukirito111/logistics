@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/UpdateState",method = {RequestMethod.GET,RequestMethod.POST})
+@RequestMapping(value = "/UpdateState", method = {RequestMethod.GET, RequestMethod.POST})
 public class UpdateState {
     @Autowired
     private com.yuantu.service.courier.UpdateState updateState;
-@ResponseBody //揽件
-@RequestMapping(value = "/updateState",method = {RequestMethod.POST})
-public void updateState(@RequestParam String newState){
-    updateState.updateState(newState);
-}
+
+    @ResponseBody //揽件
+    @RequestMapping(value = "/updateState", method = {RequestMethod.POST})
+    public void updateState(@RequestParam String newState) {
+        updateState.updateState(newState);
+    }
 }

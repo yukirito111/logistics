@@ -10,9 +10,10 @@ import org.springframework.stereotype.Service;
 public class InsertReceiveImpl implements InsertReceive {
     @Autowired
     MeslReceiveMapper meslReceiveMapper;
+
     @Override
-    public MeslReceive insertReceive(String receiveNumber,String receiveTime,String origin,String receivePlace,String freightBatchNumber,String freight) {
-       MeslReceive meslReceive = meslReceiveMapper.insertReceive(receiveNumber,receiveTime,origin,receivePlace,freightBatchNumber,freight);
-       return meslReceive;
+    public MeslReceive insertReceive(String receiveNumber, String receiveTime, String origin, String receivePlace, String freightBatchNumber, String freight) {
+        MeslReceive meslReceive = meslReceiveMapper.insertReceive(receiveNumber, receiveTime, origin, receivePlace, freightBatchNumber, freight);
+        return meslReceive;
     }
 }

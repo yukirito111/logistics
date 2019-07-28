@@ -62,7 +62,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.id
      *
      * @return the value of mesl_logistics.id
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public Integer getId() {
@@ -74,7 +73,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.id
      *
      * @param id the value for mesl_logistics.id
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setId(Integer id) {
@@ -86,7 +84,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.expressorder_number
      *
      * @return the value of mesl_logistics.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getExpressorderNumber() {
@@ -98,7 +95,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.expressorder_number
      *
      * @param expressorderNumber the value for mesl_logistics.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setExpressorderNumber(String expressorderNumber) {
@@ -110,7 +106,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.operation
      *
      * @return the value of mesl_logistics.operation
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getOperation() {
@@ -122,7 +117,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.operation
      *
      * @param operation the value for mesl_logistics.operation
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setOperation(String operation) {
@@ -134,7 +128,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.operation_people
      *
      * @return the value of mesl_logistics.operation_people
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getOperationPeople() {
@@ -146,7 +139,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.operation_people
      *
      * @param operationPeople the value for mesl_logistics.operation_people
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setOperationPeople(String operationPeople) {
@@ -158,7 +150,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.origin
      *
      * @return the value of mesl_logistics.origin
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getOrigin() {
@@ -170,7 +161,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.origin
      *
      * @param origin the value for mesl_logistics.origin
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setOrigin(String origin) {
@@ -182,7 +172,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.destination
      *
      * @return the value of mesl_logistics.destination
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getDestination() {
@@ -194,7 +183,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.destination
      *
      * @param destination the value for mesl_logistics.destination
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setDestination(String destination) {
@@ -206,7 +194,6 @@ public class MeslLogistics {
      * This method returns the value of the database column mesl_logistics.date
      *
      * @return the value of mesl_logistics.date
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public String getDate() {
@@ -218,7 +205,6 @@ public class MeslLogistics {
      * This method sets the value of the database column mesl_logistics.date
      *
      * @param date the value for mesl_logistics.date
-     *
      * @mbggenerated Fri Jun 28 14:34:58 CST 2019
      */
     public void setDate(String date) {

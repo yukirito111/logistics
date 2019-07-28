@@ -62,7 +62,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.id
      *
      * @return the value of mesl_account.id
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public Integer getId() {
@@ -74,7 +73,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.id
      *
      * @param id the value for mesl_account.id
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setId(Integer id) {
@@ -86,7 +84,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.dept
      *
      * @return the value of mesl_account.dept
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getDept() {
@@ -98,7 +95,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.dept
      *
      * @param dept the value for mesl_account.dept
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setDept(String dept) {
@@ -110,7 +106,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.personnel
      *
      * @return the value of mesl_account.personnel
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getPersonnel() {
@@ -122,7 +117,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.personnel
      *
      * @param personnel the value for mesl_account.personnel
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setPersonnel(String personnel) {
@@ -134,7 +128,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.trucks
      *
      * @return the value of mesl_account.trucks
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getTrucks() {
@@ -146,7 +139,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.trucks
      *
      * @param trucks the value for mesl_account.trucks
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setTrucks(String trucks) {
@@ -158,7 +150,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.stock
      *
      * @return the value of mesl_account.stock
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getStock() {
@@ -170,7 +161,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.stock
      *
      * @param stock the value for mesl_account.stock
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setStock(String stock) {
@@ -182,7 +172,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.account_name
      *
      * @return the value of mesl_account.account_name
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getAccountName() {
@@ -194,7 +183,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.account_name
      *
      * @param accountName the value for mesl_account.account_name
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setAccountName(String accountName) {
@@ -206,7 +194,6 @@ public class MeslAccount {
      * This method returns the value of the database column mesl_account.account_money
      *
      * @return the value of mesl_account.account_money
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public String getAccountMoney() {
@@ -218,7 +205,6 @@ public class MeslAccount {
      * This method sets the value of the database column mesl_account.account_money
      *
      * @param accountMoney the value for mesl_account.account_money
-     *
      * @mbggenerated Thu Jun 27 18:20:00 CST 2019
      */
     public void setAccountMoney(String accountMoney) {

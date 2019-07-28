@@ -21,8 +21,12 @@ public interface MeslStockMapper {
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     int insertSelective(MeslStock record);
+
     void insertStock(MeslStock meslStock);
+
     List<MeslStock> selectStock(String state);
-    void updateState(@Param("state")String state,@Param("id")String id);
+
+    void updateState(@Param("state") String state, @Param("id") String id);
+
     long selectCount(String state);
 }

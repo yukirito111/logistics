@@ -8,13 +8,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+
 @Service
 public class SelectCostProfitByNumberImpl implements SelectCostProfitByNumber {
     @Autowired
     MeslCostProfitMapper meslCostProfitMapper;
+
     @Override
-    public List<MeslCostProfit> selectCostProfitByNumber(String deptNumber, Date startDate,Date endDate) {
-        List<MeslCostProfit> list = meslCostProfitMapper.selectCostProfitByNumber(deptNumber,startDate,endDate);
+    public List<MeslCostProfit> selectCostProfitByNumber(String deptNumber, Date startDate, Date endDate) {
+        List<MeslCostProfit> list = meslCostProfitMapper.selectCostProfitByNumber(deptNumber, startDate, endDate);
         return list;
     }
 }

@@ -9,9 +9,10 @@ import org.springframework.stereotype.Service;
 public class SelectStorehouseByExpressorderNumber implements com.yuantu.service.tcstoreman.SelectStorehouseByExpressorderNumber {
     @Autowired
     MeslIntoStorehouseMapper meslIntoStorehouseMapper;
+
     @Override
     public MeslIntoStorehouse selectStorehouseByExpressorderNumber(String expressorderNumber) {
-        MeslIntoStorehouse meslIntoStorehouse =meslIntoStorehouseMapper.selectStorehouseByExpressorderNumber(expressorderNumber);
+        MeslIntoStorehouse meslIntoStorehouse = meslIntoStorehouseMapper.selectStorehouseByExpressorderNumber(expressorderNumber);
         return meslIntoStorehouse;
     }
 }

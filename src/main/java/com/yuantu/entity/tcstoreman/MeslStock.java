@@ -62,7 +62,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.id
      *
      * @return the value of mesl_stock.id
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public Integer getId() {
@@ -74,7 +73,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.id
      *
      * @param id the value for mesl_stock.id
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setId(Integer id) {
@@ -86,7 +84,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.expressorder_number
      *
      * @return the value of mesl_stock.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getExpressorderNumber() {
@@ -98,7 +95,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.expressorder_number
      *
      * @param expressorderNumber the value for mesl_stock.expressorder_number
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setExpressorderNumber(String expressorderNumber) {
@@ -110,7 +106,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.area_code
      *
      * @return the value of mesl_stock.area_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getAreaCode() {
@@ -122,7 +117,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.area_code
      *
      * @param areaCode the value for mesl_stock.area_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setAreaCode(String areaCode) {
@@ -134,7 +128,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.row_code
      *
      * @return the value of mesl_stock.row_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getRowCode() {
@@ -146,7 +139,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.row_code
      *
      * @param rowCode the value for mesl_stock.row_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setRowCode(String rowCode) {
@@ -158,7 +150,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.shelves_code
      *
      * @return the value of mesl_stock.shelves_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getShelvesCode() {
@@ -170,7 +161,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.shelves_code
      *
      * @param shelvesCode the value for mesl_stock.shelves_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setShelvesCode(String shelvesCode) {
@@ -182,7 +172,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.seat_code
      *
      * @return the value of mesl_stock.seat_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getSeatCode() {
@@ -194,7 +183,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.seat_code
      *
      * @param seatCode the value for mesl_stock.seat_code
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setSeatCode(String seatCode) {
@@ -206,7 +194,6 @@ public class MeslStock {
      * This method returns the value of the database column mesl_stock.stock_state
      *
      * @return the value of mesl_stock.stock_state
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public String getStockState() {
@@ -218,7 +205,6 @@ public class MeslStock {
      * This method sets the value of the database column mesl_stock.stock_state
      *
      * @param stockState the value for mesl_stock.stock_state
-     *
      * @mbggenerated Fri Jun 28 14:39:38 CST 2019
      */
     public void setStockState(String stockState) {
