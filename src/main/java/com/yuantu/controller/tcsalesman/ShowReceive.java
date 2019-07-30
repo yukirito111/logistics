@@ -2,23 +2,52 @@ package com.yuantu.controller.tcsalesman;
 
 import com.yuantu.entity.tcsalesman.MeslReceive;
 import com.yuantu.service.tcsalesman.InsertReceive;
+import com.yuantu.service.tcsalesman.SelectReceive;
+import com.yuantu.service.tcsalesman.SelectReceiveByNum;
+import com.yuantu.service.tcsalesman.UpdateReceive;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
-@RequestMapping(value = "/ShowReceive", method = {RequestMethod.GET, RequestMethod.POST})
+@RequestMapping(value = "/ShowReceive", method = {RequestMethod.POST})
 public class ShowReceive {
     @Autowired
-    private InsertReceive insertReceive;
+    InsertReceive insertReceive;
+    @Autowired
+    UpdateReceive updateReceive;
+    @Autowired
+    SelectReceive selectReceive;
+    @Autowired
+    SelectReceiveByNum selectReceiveByNum;
 
     @ResponseBody //添加并显示接收单
-    @RequestMapping(value = "/showReceive", method = {RequestMethod.POST})
-    public MeslReceive showReceive(@RequestParam String receiveNumber, @RequestParam String receiveTime, @RequestParam String origin, @RequestParam String receivePlace, @RequestParam String freightBatchNumber, @RequestParam String freight) {
-        MeslReceive meslReceive = insertReceive.insertReceive(receiveNumber, receiveTime, origin, receivePlace, freightBatchNumber, freight);
+    @RequestMapping(value = "/insertReceive", method = {RequestMethod.POST})
+    public MeslReceive insertReceive(@RequestBody MeslReceive meslReceive) {
+        MeslReceive meslReceive1 = insertReceive.insertReceive(meslReceive);
+        return meslReceive1;
+    }
+
+    @ResponseBody //修改并显示接收单
+    @RequestMapping(value = "/updateReceive", method = {RequestMethod.POST})
+    public MeslReceive updateReceive(@RequestBody MeslReceive meslReceive) {
+        MeslReceive meslReceive1 = updateReceive.updateReceive(meslReceive);
+        return meslReceive1;
+    }
+
+    @ResponseBody//显示所有接收单
+    @RequestMapping(value = "/selectReceive", method = RequestMethod.POST)
+    public List<MeslReceive> selectReceive() {
+        List<MeslReceive> list = selectReceive.selectReceive();
+        return list;
+    }
+
+    @ResponseBody //根据快递单号显示接收单
+    @RequestMapping(value = "/selectReceiveByNum", method = {RequestMethod.POST})
+    public MeslReceive selectReceiveByNum(@RequestParam String expressorderNumber) {
+        MeslReceive meslReceive = selectReceiveByNum.selectReceiveByNum(expressorderNumber);
         return meslReceive;
     }
 }

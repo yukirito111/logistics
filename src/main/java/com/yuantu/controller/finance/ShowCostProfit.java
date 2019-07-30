@@ -19,6 +19,7 @@ public class ShowCostProfit {
     SelectCostProfitByDate selectCostProfitByDate;
     @Autowired
     InsertCostProfit insertCostProfit;
+
     @ResponseBody //根据日期查询成本收益表
     @RequestMapping(value = "/showCostProfitByDate")
     public List<MeslCostProfit> showCostProfitByDate(@RequestParam String startDate, @RequestParam String endDate) {
@@ -27,10 +28,11 @@ public class ShowCostProfit {
         List<MeslCostProfit> list = selectCostProfitByDate.selectCostProfitByDate(newStartDate, newEndDate);
         return list;
     }
+
     @ResponseBody //添加成本收益表
-    @RequestMapping(value = "/insertCostProfit",method = {RequestMethod.POST})
-    public String insertCostProfit(@RequestBody MeslCostProfit meslCostProfit){
-       String tip = insertCostProfit.insertCostProfit(meslCostProfit);
-       return tip;
+    @RequestMapping(value = "/insertCostProfit", method = {RequestMethod.POST})
+    public String insertCostProfit(@RequestBody MeslCostProfit meslCostProfit) {
+        String tip = insertCostProfit.insertCostProfit(meslCostProfit);
+        return tip;
     }
 }

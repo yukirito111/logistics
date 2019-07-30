@@ -14,6 +14,7 @@ public class SelectCountImpl implements SelectCount {
     MeslStockMapper meslStockMapper;
     @Autowired
     SelectCountImpl selectCountImpl;
+
     @Override
     public double selectCount(String state) {
         return meslStockMapper.selectCount(state);
@@ -22,7 +23,7 @@ public class SelectCountImpl implements SelectCount {
     @Override
     public String ia(double newProportion) {
         double count = selectCountImpl.selectCount("1");
-        String tip = inventoryAlarm( newProportion,count);
+        String tip = inventoryAlarm(newProportion, count);
         return tip;
     }
 

@@ -23,17 +23,12 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         
-        <table tableName="mesl_transport_form" enableCountByExample="false" enableUpdateByExample="false"
+        <table tableName="mesl_shipping" enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false" enableSelectByPrimaryKey="true">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
-        <table tableName="mesl_logistics" enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false" enableSelectByPrimaryKey="true">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
-        </table>
 
     </context>
 </generatorConfiguration>

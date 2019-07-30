@@ -49,10 +49,11 @@ public class ShowPayment {
         double total = selectTotalPaymentMoney.selectTotalPaymentMoney(type);
         return total;
     }
+
     @ResponseBody //添加付款单
-    @RequestMapping(value = "/insertPayment",method = {RequestMethod.POST})
-    public String insertPayent(@RequestBody MeslPayment meslPayment){
-       String tip = insertPayment.insertPayment(meslPayment);
-       return tip;
+    @RequestMapping(value = "/insertPayment", method = {RequestMethod.POST})
+    public String insertPayent(@RequestBody MeslPayment meslPayment) {
+        String tip = insertPayment.insertPayment(meslPayment);
+        return tip;
     }
 }

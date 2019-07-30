@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/InventoryAlarm",method = {RequestMethod.POST})
+@RequestMapping(value = "/InventoryAlarm", method = {RequestMethod.POST})
 public class InventoryAlarm {
     @Autowired
     SelectCount selectCount;
+
     @ResponseBody //库存预警
-    @RequestMapping(value = "/inventoryAlarm",method = {RequestMethod.POST})
-    public String inventoryAlarm(@RequestParam double newProportion){
+    @RequestMapping(value = "/inventoryAlarm", method = {RequestMethod.POST})
+    public String inventoryAlarm(@RequestParam double newProportion) {
         return selectCount.ia(newProportion);
     }
 

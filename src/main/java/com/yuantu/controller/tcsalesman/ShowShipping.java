@@ -2,35 +2,52 @@ package com.yuantu.controller.tcsalesman;
 
 import com.yuantu.entity.tcsalesman.MeslShipping;
 import com.yuantu.service.tcsalesman.InsertShipping;
+import com.yuantu.service.tcsalesman.SelectShipping;
+import com.yuantu.service.tcsalesman.SelectShippingByNum;
 import com.yuantu.service.tcsalesman.UpdateShipping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
-@RequestMapping(value = "/ShowShipping", method = RequestMethod.POST)
+@RequestMapping(value = "/ShowShipping", method = {RequestMethod.POST})
 public class ShowShipping {
     @Autowired
     InsertShipping insertShipping;
     @Autowired
     UpdateShipping updateShipping;
+    @Autowired
+    SelectShipping selectShipping;
+    @Autowired
+    SelectShippingByNum selectShippingByNum;
 
     @ResponseBody //添加并显示装运单
     @RequestMapping(value = "/insertShipping", method = {RequestMethod.POST})
     public MeslShipping insertShipping(@RequestBody MeslShipping meslShipping) {
-        MeslShipping ms = insertShipping.insertShipping(meslShipping);
-        return ms;
+        MeslShipping meslShipping1 = insertShipping.insertShipping(meslShipping);
+        return meslShipping1;
     }
 
-    @ResponseBody
+    @ResponseBody //修改并显示装运单
     @RequestMapping(value = "/updateShipping", method = {RequestMethod.POST})
-    public void updateShipping(@RequestParam String shippingorderNumber, @RequestParam String shippingTime, @RequestParam String trainNumber, @RequestParam String origin, @RequestParam String destination, @RequestParam String carriageNumber, @RequestParam String operator, @RequestParam Integer id) {
-        updateShipping.updateShippingorderNumber(shippingorderNumber, id);
-        updateShipping.updateShippingTime(shippingTime, id);
-        updateShipping.updateTrainNumber(trainNumber, id);
-        updateShipping.updateOrigin(origin, id);
-        updateShipping.updateDestination(destination, id);
-        updateShipping.updateCarriageNumber(carriageNumber, id);
-        updateShipping.updateOperator(operator, id);
+    public MeslShipping updateShipping(@RequestBody MeslShipping meslShipping) {
+        MeslShipping meslShipping1 = updateShipping.updateShipping(meslShipping);
+        return meslShipping1;
+    }
+
+    @ResponseBody //显示所有装运单
+    @RequestMapping(value = "/selectShipping", method = {RequestMethod.POST})
+    public List<MeslShipping> selectShipping(@RequestBody MeslShipping meslShipping) {
+        List<MeslShipping> list = selectShipping.selectShipping(meslShipping);
+        return list;
+    }
+
+    @ResponseBody //根据快递单号显示装运单
+    @RequestMapping(value = "/selectShippingByNum", method = {RequestMethod.POST})
+    public MeslShipping selectShippingByNum(@RequestParam String expressorderNumber) {
+        MeslShipping meslShipping = selectShippingByNum.selectShippingByNum(expressorderNumber);
+        return meslShipping;
     }
 }

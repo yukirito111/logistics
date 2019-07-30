@@ -83,7 +83,9 @@
         </trim>
     </insert>
     <insert id="insertPayment">
-        insert into mesl_payment (payment_number, payment_type, payment_date, payment_person, payment_money, payment_account)value (#{paymentNumber},#{paymentType},#{paymentDate},#{paymentPerson},#{paymentMoney},#{paymentAccount})
+        insert into mesl_payment (payment_number, payment_type, payment_date, payment_person, payment_money,
+                                  payment_account) value (#{paymentNumber}, #{paymentType}, #{paymentDate},
+                                                          #{paymentPerson}, #{paymentMoney}, #{paymentAccount})
     </insert>
     <select id="selectPaymentByPaymentType" resultType="com.yuantu.entity.finance.MeslPayment">
         SELECT id,

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class UpdateMailImpl implements UpdateMail {
     @Autowired
     MeslMailMapper meslMailMapper;
+
     @Override
     public String updateMail(MeslMail meslMail) {
         meslMailMapper.updateMail(meslMail);

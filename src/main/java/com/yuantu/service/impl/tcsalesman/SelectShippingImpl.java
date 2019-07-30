@@ -14,8 +14,8 @@ public class SelectShippingImpl implements SelectShipping {
     MeslShippingMapper meslShippingMapper;
 
     @Override
-    public List<MeslShipping> selectShipping() {
-        List<MeslShipping> list = meslShippingMapper.selectShipping();
+    public List<MeslShipping> selectShipping(MeslShipping meslShipping) {
+        List<MeslShipping> list = meslShippingMapper.selectShipping(meslShipping);
         return list;
     }
 }

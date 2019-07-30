@@ -11,13 +11,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/ShowStorehouse",method = {RequestMethod.GET,RequestMethod.POST})
+@RequestMapping(value = "/ShowStorehouse", method = {RequestMethod.GET, RequestMethod.POST})
 public class ShowStorehouse {
     @Autowired
     private SelectStorehouse selectStorehouse;
+
     @ResponseBody //查询入库单
-    @RequestMapping(value = "/showStorehouse",method = {RequestMethod.POST})
-    public List<MeslIntoStorehouse> showStorehouse(){
+    @RequestMapping(value = "/showStorehouse", method = {RequestMethod.POST})
+    public List<MeslIntoStorehouse> showStorehouse() {
         List<MeslIntoStorehouse> list = selectStorehouse.selectStorehouse();
         return list;
     }

@@ -21,7 +21,10 @@ public interface MeslMailMapper {
      * @mbggenerated Thu Jul 25 17:43:38 CST 2019
      */
     int insertSelective(MeslMail record);
+
     void updateMail(MeslMail meslMail);
-    List<MeslMail> selectMailByState(@Param("state") String state,@Param("recipientAddress")String recipientAddress);
+
+    List<MeslMail> selectMailByState(@Param("state") String state, @Param("recipientAddress") String recipientAddress);
+
     void updateState(String state);
 }

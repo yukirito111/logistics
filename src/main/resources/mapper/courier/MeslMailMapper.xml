@@ -158,7 +158,13 @@
         where mail_state = 0;
     </update>
     <update id="updateMail">
-        update mesl_mail set cargo_type = #{cargoType}, cargo_weight = #{cargoWeight},cargo_size = #{cargoSize},pack_type = #{packType},appointment_time = #{appointmentTime} where expressorder_number = #{expressorderNumber}
+        update mesl_mail
+        set cargo_type       = #{cargoType},
+            cargo_weight     = #{cargoWeight},
+            cargo_size       = #{cargoSize},
+            pack_type        = #{packType},
+            appointment_time = #{appointmentTime}
+        where expressorder_number = #{expressorderNumber}
     </update>
     <select id="selectMailByState" resultType="com.yuantu.entity.courier.MeslMail">
         SELECT expressorder_number AS expressorderNumber,
@@ -176,6 +182,7 @@
                appointment_time    AS appointMent,
                mail_state          AS mailState
         FROM mesl_mail
-        WHERE mail_state = #{state} and recipient_address = #{recipientAddress}
+        WHERE mail_state = #{state}
+          and recipient_address = #{recipientAddress}
     </select>
 </mapper>

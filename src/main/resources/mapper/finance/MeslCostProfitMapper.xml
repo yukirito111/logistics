@@ -8,7 +8,7 @@
           This element was generated on Fri Jun 28 16:00:13 CST 2019.
         -->
         <result column="id" property="id" jdbcType="INTEGER"/>
-        <result column="cost_profit__date" property="costProfitDate" jdbcType="DATE"/>
+        <result column="cost_profit_date" property="costProfitDate" jdbcType="DATE"/>
         <result column="dept_number" property="deptNumber" jdbcType="VARCHAR"/>
         <result column="total_expend" property="totalExpend" jdbcType="DOUBLE"/>
         <result column="total_income" property="totalIncome" jdbcType="DOUBLE"/>
@@ -23,7 +23,7 @@
         <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into mesl_cost_profit (cost_profit__date, dept_number, total_expend,
+        insert into mesl_cost_profit (cost_profit_date, dept_number, total_expend,
         total_income, total_profit)
         values (#{costProfitDate,jdbcType=DATE}, #{deptNumber,jdbcType=VARCHAR}, #{totalExpend,jdbcType=VARCHAR},
         #{totalIncome,jdbcType=VARCHAR}, #{totalProfit,jdbcType=VARCHAR})
@@ -40,7 +40,7 @@
         insert into mesl_cost_profit
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="costProfitDate != null">
-                cost_profit__date,
+                cost_profit_date,
             </if>
             <if test="deptNumber != null">
                 dept_number,
@@ -74,17 +74,19 @@
         </trim>
     </insert>
     <insert id="insertCostProfit">
-        insert into mesl_cost_profit ( dept_number, total_expend, total_income, total_profit) value (#{deptNumber},#{totalExpend},#{totalIncome},#{totalProfit})
+        insert into mesl_cost_profit (cost_profit_date, dept_number, total_expend, total_income,
+                                      total_profit) value (#{costProfitDate}, #{deptNumber}, #{totalExpend},
+                                                           #{totalIncome}, #{totalProfit})
     </insert>
     <select id="selectCostProfitByDate" resultType="com.yuantu.entity.finance.MeslCostProfit">
         SELECT id,
-               cost_profit__date AS costProfitDate,
-               dept_number       AS deptNumber,
-               total_expend      AS totalExpend,
-               total_income      AS totalIncome,
-               total_profit      AS totalProfit
+               cost_profit_date AS costProfitDate,
+               dept_number      AS deptNumber,
+               total_expend     AS totalExpend,
+               total_income     AS totalIncome,
+               total_profit     AS totalProfit
         FROM mesl_cost_profit
-        WHERE cost_profit__date BETWEEN #{startDate} and #{endDate}
+        WHERE cost_profit_date BETWEEN #{startDate} and #{endDate}
     </select>
     <select id="selectCostProfitByNumber" resultType="com.yuantu.entity.finance.MeslCostProfit">
         select A.id,
@@ -94,13 +96,13 @@
                A.totalIncome    AS totalIncome,
                A.totalProfit    AS totalProfit
         from (SELECT id,
-                     cost_profit__date AS costProfitDate,
-                     dept_number       AS deptNumber,
-                     total_expend      AS totalExpend,
-                     total_income      AS totalIncome,
-                     total_profit      AS totalProfit
+                     cost_profit_date AS costProfitDate,
+                     dept_number      AS deptNumber,
+                     total_expend     AS totalExpend,
+                     total_income     AS totalIncome,
+                     total_profit     AS totalProfit
               FROM mesl_cost_profit
-              WHERE cost_profit__date BETWEEN #{startDate} and #{endDate}) A
+              WHERE cost_profit_date BETWEEN #{startDate} and #{endDate}) A
         where A.deptNumber = #{deptNumber};
     </select>
 </mapper>

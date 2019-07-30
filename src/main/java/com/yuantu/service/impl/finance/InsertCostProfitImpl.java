@@ -14,6 +14,7 @@ import static com.yuantu.service.util.DateUtil.conversion;
 public class InsertCostProfitImpl implements InsertCostProfit {
     @Autowired
     MeslCostProfitMapper meslCostProfitMapper;
+
     @Override
     public String insertCostProfit(MeslCostProfit meslCostProfit) {
         double totalProfit = meslCostProfit.getTotalExpend() - meslCostProfit.getTotalIncome();

@@ -1,29 +1,5 @@
 package com.yuantu.logisticsmanagement;
 
-import com.yuantu.entity.finance.*;
-import com.yuantu.entity.tcsalesman.MeslShipping;
-import com.yuantu.entity.tcstoreman.MeslIntoStorehouse;
-import com.yuantu.service.finance.*;
-import com.yuantu.service.tcsalesman.InsertReceive;
-import com.yuantu.service.tcsalesman.InsertShipping;
-import com.yuantu.service.tcsalesman.SelectShipping;
-import com.yuantu.service.tcstoreman.InsertStore;
-import com.yuantu.service.tcstoreman.SelectStorehouse;
-import com.yuantu.service.tcstoreman.SelectStorehouseByDate;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
-
-import java.util.Date;
-import java.util.List;
-
-
-import static com.yuantu.service.util.DateUtil.conversion;
 /*
 
 @RunWith(SpringRunner.class)
