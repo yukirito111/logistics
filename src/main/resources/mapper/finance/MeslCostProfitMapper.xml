@@ -10,9 +10,9 @@
         <result column="id" property="id" jdbcType="INTEGER"/>
         <result column="cost_profit__date" property="costProfitDate" jdbcType="DATE"/>
         <result column="dept_number" property="deptNumber" jdbcType="VARCHAR"/>
-        <result column="total_expend" property="totalExpend" jdbcType="VARCHAR"/>
-        <result column="total_income" property="totalIncome" jdbcType="VARCHAR"/>
-        <result column="total_profit" property="totalProfit" jdbcType="VARCHAR"/>
+        <result column="total_expend" property="totalExpend" jdbcType="DOUBLE"/>
+        <result column="total_income" property="totalIncome" jdbcType="DOUBLE"/>
+        <result column="total_profit" property="totalProfit" jdbcType="DOUBLE"/>
     </resultMap>
     <insert id="insert" parameterType="com.yuantu.entity.finance.MeslCostProfit">
         <!--
@@ -72,6 +72,9 @@
                 #{totalProfit,jdbcType=VARCHAR},
             </if>
         </trim>
+    </insert>
+    <insert id="insertCostProfit">
+        insert into mesl_cost_profit ( dept_number, total_expend, total_income, total_profit) value (#{deptNumber},#{totalExpend},#{totalIncome},#{totalProfit})
     </insert>
     <select id="selectCostProfitByDate" resultType="com.yuantu.entity.finance.MeslCostProfit">
         SELECT id,

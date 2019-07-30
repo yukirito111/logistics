@@ -2,12 +2,10 @@ package com.yuantu.controller.courier;
 
 import com.yuantu.entity.courier.MeslMail;
 import com.yuantu.service.courier.SelectMailByState;
+import com.yuantu.service.courier.UpdateMail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,11 +14,17 @@ import java.util.List;
 public class ShowMail {
     @Autowired
     private SelectMailByState selectMailByState;
-
-    @ResponseBody //查询未揽件订单
+    @Autowired
+    private UpdateMail updateMail;
+    @ResponseBody //查询本地未揽件订单
     @RequestMapping(value = "/showMail", method = {RequestMethod.POST})
-    public List<MeslMail> showMail() {
-        List<MeslMail> list = selectMailByState.selectMailByState("0");
+    public List<MeslMail> showMail(@RequestParam String recipientAddress) {
+        List<MeslMail> list = selectMailByState.selectMailByState("1",recipientAddress);
         return list;
+    }
+    @ResponseBody //添加货物信息
+    @RequestMapping(value = "/updateMail",method = {RequestMethod.POST})
+    public String updateMail(@RequestBody MeslMail meslMail){
+        return updateMail.updateMail(meslMail);
     }
 }

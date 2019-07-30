@@ -6,10 +6,16 @@ import com.yuantu.service.tcstoreman.SelectCount;
 
 public class InventoryAlarmUtil {
 
-    public static double inventoryAlarm(double capacity) {
-        SelectCountImpl selectCountImpl = new SelectCountImpl();
-        double count = selectCountImpl.selectCount("1");
+    public static String inventoryAlarm(double newProportion,double count) {
+        double capacity = 200;
+        String tip = "";
         double proportion = count / capacity;
-        return proportion;
+        if (proportion>=newProportion){
+            tip = "库存已超出预设值";
+        }
+        /*else {
+            tip = "库存良好";
+        }*/
+        return tip;
     }
 }

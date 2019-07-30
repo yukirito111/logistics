@@ -1,16 +1,10 @@
 package com.yuantu.controller.finance;
 
 import com.yuantu.entity.finance.MeslPayment;
-import com.yuantu.service.finance.SelectPaymentByDate;
-import com.yuantu.service.finance.SelectPaymentByNumber;
-import com.yuantu.service.finance.SelectPaymentByPaymentType;
-import com.yuantu.service.finance.SelectTotalPaymentMoney;
+import com.yuantu.service.finance.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,6 +19,8 @@ public class ShowPayment {
     SelectPaymentByPaymentType selectPaymentByPaymentType;
     @Autowired
     SelectTotalPaymentMoney selectTotalPaymentMoney;
+    @Autowired
+    InsertPayment insertPayment;
 
     @ResponseBody //通过付款单编号查询付款单信息
     @RequestMapping(value = "/showPaymentByNumber", method = {RequestMethod.POST})
@@ -52,5 +48,11 @@ public class ShowPayment {
     public double totalPaymentMoney(@RequestParam String type) {
         double total = selectTotalPaymentMoney.selectTotalPaymentMoney(type);
         return total;
+    }
+    @ResponseBody //添加付款单
+    @RequestMapping(value = "/insertPayment",method = {RequestMethod.POST})
+    public String insertPayent(@RequestBody MeslPayment meslPayment){
+       String tip = insertPayment.insertPayment(meslPayment);
+       return tip;
     }
 }

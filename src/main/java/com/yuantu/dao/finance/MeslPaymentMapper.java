@@ -31,4 +31,5 @@ public interface MeslPaymentMapper {
     MeslPayment selectPaymentByNumber(String number);
 
     double total(String paymentType);
+    void insertPayment(MeslPayment meslPayment);
 }

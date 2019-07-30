@@ -28,4 +28,5 @@ public interface MeslCostProfitMapper {
     List<MeslCostProfit> selectCostProfitByDate(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
 
     List<MeslCostProfit> selectCostProfitByNumber(@Param("deptNumber") String deptNumber, @Param("startDate") Date startDate, @Param("endDate") Date endDate);
+    void insertCostProfit(MeslCostProfit meslCostProfit);
 }

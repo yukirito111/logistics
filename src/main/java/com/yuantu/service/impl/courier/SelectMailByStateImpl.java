@@ -14,8 +14,8 @@ public class SelectMailByStateImpl implements SelectMailByState {
     MeslMailMapper meslMailMapper;
 
     @Override
-    public List<MeslMail> selectMailByState(String state) {
-        List<MeslMail> list = meslMailMapper.selectMailByState(state);
+    public List<MeslMail> selectMailByState(String state,String recipientAddress) {
+        List<MeslMail> list = meslMailMapper.selectMailByState(state,recipientAddress);
         return list;
     }
 }

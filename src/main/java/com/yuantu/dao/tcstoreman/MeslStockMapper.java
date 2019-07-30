@@ -28,5 +28,5 @@ public interface MeslStockMapper {
 
     void updateState(@Param("state") String state, @Param("id") String id);
 
-    long selectCount(String state);
+    double selectCount(String state);
 }
