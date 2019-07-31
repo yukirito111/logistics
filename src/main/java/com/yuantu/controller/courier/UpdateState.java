@@ -14,7 +14,7 @@ public class UpdateState {
     private com.yuantu.service.courier.UpdateState updateState;
 
     @ResponseBody //揽件
-    @RequestMapping(value = "/updateState", method = {RequestMethod.POST})
+    @RequestMapping(value = "/updateState", method = {RequestMethod.GET,RequestMethod.POST})
     public void updateState(@RequestParam String newState) {
         updateState.updateState(newState);
     }

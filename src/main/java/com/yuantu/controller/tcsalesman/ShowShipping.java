@@ -24,28 +24,28 @@ public class ShowShipping {
     SelectShippingByNum selectShippingByNum;
 
     @ResponseBody //添加并显示装运单
-    @RequestMapping(value = "/insertShipping", method = {RequestMethod.POST})
+    @RequestMapping(value = "/insertShipping", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslShipping insertShipping(@RequestBody MeslShipping meslShipping) {
         MeslShipping meslShipping1 = insertShipping.insertShipping(meslShipping);
         return meslShipping1;
     }
 
     @ResponseBody //修改并显示装运单
-    @RequestMapping(value = "/updateShipping", method = {RequestMethod.POST})
+    @RequestMapping(value = "/updateShipping", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslShipping updateShipping(@RequestBody MeslShipping meslShipping) {
         MeslShipping meslShipping1 = updateShipping.updateShipping(meslShipping);
         return meslShipping1;
     }
 
     @ResponseBody //显示所有装运单
-    @RequestMapping(value = "/selectShipping", method = {RequestMethod.POST})
+    @RequestMapping(value = "/selectShipping", method = {RequestMethod.GET,RequestMethod.POST})
     public List<MeslShipping> selectShipping() {
         List<MeslShipping> list = selectShipping.selectShipping();
         return list;
     }
 
     @ResponseBody //根据快递单号显示装运单
-    @RequestMapping(value = "/selectShippingByNum", method = {RequestMethod.POST})
+    @RequestMapping(value = "/selectShippingByNum", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslShipping selectShippingByNum(@RequestParam String expressorderNumber) {
         MeslShipping meslShipping = selectShippingByNum.selectShippingByNum(expressorderNumber);
         return meslShipping;

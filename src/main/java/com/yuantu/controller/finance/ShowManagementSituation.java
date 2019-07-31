@@ -23,7 +23,7 @@ public class ShowManagementSituation {
     private SelectManagementSituationByDate selectManagementSituationByDate;
 
     @ResponseBody //通过日期查询经营情况表
-    @RequestMapping(value = "/showManagementSituation", method = RequestMethod.POST)
+    @RequestMapping(value = "/showManagementSituation", method = {RequestMethod.GET,RequestMethod.POST})
     public List<MeslManagementSituationVO> showManagementSituation(@RequestParam String startDate, @RequestParam String endDate) {
         Date newstartDate = conversion(startDate);
         Date newendDate = conversion(endDate);

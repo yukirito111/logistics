@@ -25,7 +25,7 @@ public class ShowAccount {
     UpdateAccount updateAccount;
 
     @ResponseBody //期初建账
-    @RequestMapping(value = "/showAccount", method = {RequestMethod.POST})
+    @RequestMapping(value = "/showAccount", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslAccount showAccount() {
         Integer id = 11;
         insertAccount.insertAccount();
@@ -34,20 +34,20 @@ public class ShowAccount {
     }
 
     @ResponseBody //显示修改后账户信息
-    @RequestMapping(value = "/showUpdateAccount", method = {RequestMethod.POST})
+    @RequestMapping(value = "/showUpdateAccount", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslAccountUpdate showUpdateAccount() {
         MeslAccountUpdate mu = selectUpdateAccount.selectUpdateAccount();
         return mu;
     }
 
     @ResponseBody //设置默认值
-    @RequestMapping(value = "/insertAccount", method = {RequestMethod.POST})
+    @RequestMapping(value = "/insertAccount", method = {RequestMethod.GET,RequestMethod.POST})
     public void insertAccount() {
         insertUpdateAccount.insertupdateAccount();
     }
 
     @ResponseBody //修改账户信息
-    @RequestMapping(value = "/updateAccount", method = {RequestMethod.POST})
+    @RequestMapping(value = "/updateAccount", method = {RequestMethod.GET,RequestMethod.POST})
     public void updateAccount(@RequestBody MeslAccountUpdate meslAccountUpdate) {
         updateAccount.updateAccount(meslAccountUpdate);
     }

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/ShowSettlement", method = {RequestMethod.POST})
+@RequestMapping(value = "/ShowSettlement", method = {RequestMethod.GET,RequestMethod.POST})
 public class ShowSettlement {
     @Autowired
     SelectAllReceipt selectAllReceipt;
@@ -24,21 +24,21 @@ public class ShowSettlement {
     SelectTotalActualReceiptMoney selectTotalActualReceiptMoney;
 
     @ResponseBody //查询结算管理表
-    @RequestMapping(value = "/showAllSettlement", method = {RequestMethod.POST})
+    @RequestMapping(value = "/showAllSettlement", method = {RequestMethod.GET,RequestMethod.POST})
     public List<MeslReceipt> showAllSettlement() {
         List<MeslReceipt> list = selectAllReceipt.selectAllReceipt();
         return list;
     }
 
     @ResponseBody //根据日期查询结算管理表
-    @RequestMapping(value = "/showSettlementByDate", method = {RequestMethod.POST})
+    @RequestMapping(value = "/showSettlementByDate", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslReceipt showSettlementByDate(@RequestParam String date) {
         MeslReceipt meslReceipt = selectReceiptByDate.selectReceiptByDate(date);
         return meslReceipt;
     }
 
     @ResponseBody //合计
-    @RequestMapping(value = "/totalReceipt", method = {RequestMethod.POST})
+    @RequestMapping(value = "/totalReceipt", method = {RequestMethod.GET,RequestMethod.POST})
     public double totalReceipt() {
         double total = selectTotalActualReceiptMoney.selectTotalActualReceiptMoney();
         return total;

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/showTransportForm", method = {RequestMethod.POST})
+@RequestMapping(value = "/showTransportForm", method = {RequestMethod.GET,RequestMethod.POST})
 public class ShowTransportForm {
     @Autowired
     InsertTransportForm insertTransportForm;
@@ -24,21 +24,21 @@ public class ShowTransportForm {
     SelectTransportFormByExpressorderNumber selectTransportFormByExpressorderNumber;
 
     @ResponseBody //添加货运单
-    @RequestMapping(value = "/insertTransportForm", method = {RequestMethod.POST})
+    @RequestMapping(value = "/insertTransportForm", method = {RequestMethod.GET,RequestMethod.POST})
     public String insertTransportForm(@RequestParam String transportNumber, @RequestParam String recipientAddress) {
         String tip = insertTransportForm.insertTransportForm(transportNumber, recipientAddress);
         return tip;
     }
 
     @ResponseBody //查询货运单
-    @RequestMapping(value = "/selectTransportForm", method = {RequestMethod.POST})
+    @RequestMapping(value = "/selectTransportForm", method = {RequestMethod.GET,RequestMethod.POST})
     public List<MeslTransportForm> selectTransportForm() {
         List<MeslTransportForm> meslTransportForms = selectTransportForm.selectTransportForm();
         return meslTransportForms;
     }
 
     @ResponseBody //根据快递单号查询货运单号
-    @RequestMapping(value = "/selectFormByNum", method = {RequestMethod.POST})
+    @RequestMapping(value = "/selectFormByNum", method = {RequestMethod.GET,RequestMethod.POST})
     public MeslTransportForm selectFormByNum(@RequestParam String expressorderNumber) {
         MeslTransportForm meslTransportForm = selectTransportFormByExpressorderNumber.selectTransportFormByExpressorderNumber(expressorderNumber);
         return meslTransportForm;

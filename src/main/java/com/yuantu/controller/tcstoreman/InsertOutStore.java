@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/InsertOutStore", method = {RequestMethod.POST})
+@RequestMapping(value = "/InsertOutStore", method = {RequestMethod.GET,RequestMethod.POST})
 public class InsertOutStore {
     @Autowired
     InsertOutStorehouse insertOutStorehouse;
@@ -19,7 +19,7 @@ public class InsertOutStore {
     SelectStock selectStock;
 
     @ResponseBody //添加出库单
-    @RequestMapping(value = "/insertOutStore", method = {RequestMethod.POST})
+    @RequestMapping(value = "/insertOutStore", method = {RequestMethod.GET,RequestMethod.POST})
     public String insertOutStore(@RequestBody MeslOutStorehouse meslOutStorehouse) {
         List<MeslStock> list = selectStock.selectStock("1");
         String tip = "";

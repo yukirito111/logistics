@@ -18,14 +18,14 @@ public class ShowMail {
     private UpdateMail updateMail;
 
     @ResponseBody //查询本地未揽件订单
-    @RequestMapping(value = "/showMail", method = {RequestMethod.POST})
+    @RequestMapping(value = "/showMail", method = {RequestMethod.GET,RequestMethod.POST})
     public List<MeslMail> showMail(@RequestParam String recipientAddress) {
         List<MeslMail> list = selectMailByState.selectMailByState("1", recipientAddress);
         return list;
     }
 
     @ResponseBody //添加货物信息
-    @RequestMapping(value = "/updateMail", method = {RequestMethod.POST})
+    @RequestMapping(value = "/updateMail", method = {RequestMethod.GET,RequestMethod.POST})
     public String updateMail(@RequestBody MeslMail meslMail) {
         return updateMail.updateMail(meslMail);
     }

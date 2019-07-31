@@ -17,7 +17,7 @@ public class ShowStorehouse {
     private SelectStorehouse selectStorehouse;
 
     @ResponseBody //查询入库单
-    @RequestMapping(value = "/showStorehouse", method = {RequestMethod.POST})
+    @RequestMapping(value = "/showStorehouse", method = {RequestMethod.GET,RequestMethod.POST})
     public List<MeslIntoStorehouse> showStorehouse() {
         List<MeslIntoStorehouse> list = selectStorehouse.selectStorehouse();
         return list;

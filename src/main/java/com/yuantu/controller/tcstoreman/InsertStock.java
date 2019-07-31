@@ -19,7 +19,7 @@ public class InsertStock {
     SelectStorehouseByExpressorderNumber selectStorehouseByExpressorderNumber;
 
     @ResponseBody //添加库存单
-    @RequestMapping(value = "/insertStock", method = {RequestMethod.POST})
+    @RequestMapping(value = "/insertStock", method = {RequestMethod.GET,RequestMethod.POST})
     public String insertStock(@RequestBody MeslIntoStorehouse meslIntoStorehouse) {
         insertStore.insertStore(meslIntoStorehouse);
         MeslIntoStorehouse ms = selectStorehouseByExpressorderNumber.selectStorehouseByExpressorderNumber(meslIntoStorehouse.getExpressorderNumber());
