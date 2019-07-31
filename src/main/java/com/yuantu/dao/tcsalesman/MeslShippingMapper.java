@@ -57,7 +57,7 @@ public interface MeslShippingMapper {
 
     MeslShipping updateShipping(MeslShipping meslShipping);
 
-    List<MeslShipping> selectShipping(MeslShipping meslShipping);
+    List<MeslShipping> selectShipping();
 
     MeslShipping selectShippingByNum(String expressorderNumber);
 }

@@ -39,8 +39,8 @@ public class ShowShipping {
 
     @ResponseBody //显示所有装运单
     @RequestMapping(value = "/selectShipping", method = {RequestMethod.POST})
-    public List<MeslShipping> selectShipping(@RequestBody MeslShipping meslShipping) {
-        List<MeslShipping> list = selectShipping.selectShipping(meslShipping);
+    public List<MeslShipping> selectShipping() {
+        List<MeslShipping> list = selectShipping.selectShipping();
         return list;
     }
 
